@@ -48,10 +48,10 @@ const acceptInput = function(input) {
 
 const makeGuess = function (guess) {
     guess = guess.toUpperCase ();
-    if (guessedLettersElement.includes(guess)) {
+    if (guessedLetters.includes(guess)) {
         message.innerText = "You already guessed that letter, silly. Try again.";
     } else {
-        guessedLettersElement.push(guess);
+        guessedLetters.push(guess);
         console.log(guessedLetters)
     }
 };
